@@ -8,6 +8,7 @@ import time
 import datetime
 import requests
 import numpy as np
+import init_configs
 from custom_logger import logging
 import os
 

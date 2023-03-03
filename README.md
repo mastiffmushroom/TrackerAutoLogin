@@ -22,7 +22,9 @@ This is a docker file to automate the logging in of torrent trackers every few h
 
 This software uses Docker, so please look into how to install it on Docker. As I run linux, I will only be able to tell you how to run it on linux.
 
-Once the files are downloaded, rename `user_config_sample.json` to `user_config.json`. From there, open up `user_config.json` and delete all of the sites that you don't have login details for. For each individual site, you can put in your appropriate username and password.
+The configuration files are loaded under `config/`. On the github page, it has an example of each one, and on the first runtime it will download these directly from the github and put them in the corresponding `config/` folder. If you mount your host path to the container, you can edit these from the container and maintain persistance with updates.
+
+The code lookds for `user_config.json` while `config/` only has `user_config_sample.json` to give you an idea on how to fill it out. You only need to put in information for websites that you have login details for -- otherwise the login will fail.
 
 `LogLevel` is the level you want to write logs to. All logs are written inside the docker container to `/app/Logfile/TrackerLogin.log`. `LogLevel` takes 3 values [`debug`, `warning`, `error`].
 
@@ -32,23 +34,43 @@ Once the files are downloaded, rename `user_config_sample.json` to `user_config.
 
 ## How to Run
 
-You can run this off dockerhub easily, and I'm currently waiting for approval for the Unraid Community Applications. 
+You can run this 3 different ways
 
-Otherwise, you can run it straight off your linux system with docker installed in the following way
+### Directly on your machine
 
 ```bash
 cd /path/to/TrackerAutoLogin/
 docker build . -t trackerautologin
-docker run -it trackerautologin
+docker run -v /path/on/your/system/:/app/config/ -it trackerautologin
 ```
+After running this, stop the run, navigate to `/path/on/your/system/` and update the `user_config.json` with your login instructions for each of the trackers that you have access to.
+
+### Through dockerhub
+
+```bash
+docker pull mastiffmushroom/trackerautologin
+```
+
+Then you can simply run it using the same command as above
+
+```bash
+docker run -v /path/on/your/system/:/app/config/ -it mastiffmushroom/trackerautologin
+```
+
+#### Note about running locally
 
 To view the log file, you first need to run `docker ps` and get the phrase in the format of `word1_word2` under the `NAME` column. For the example below, replace `WORD1_WORD2` with what you found in the `NAME` column.
 
 ```bash
 docker exec -it WORD1_WORD2 bash
-cd /app/Logfile/
-more TrackerLogfile.log
+cd /app/config/logs/
+more trackerautologin.log
 ```
+
+### Unraid Community Applications
+
+This app is now located on the Unraid Community Applications and can be ran as a typical app there as well.
+
 
 ## Future work
 
