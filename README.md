@@ -29,9 +29,9 @@ Once the files are downloaded, rename `user_config_sample.json` to `user_config.
 
 ## How to Run
 
-I will be moving this to DockerHub as well as try to get it uploaded on the Unraid Community Apps, however this will take some time. 
+You can run this off dockerhub easily, and I'm currently waiting for approval for the Unraid Community Applications. 
 
-In the meantime, on linux you can run it with the following commands
+Otherwise, you can run it straight off your linux system with docker installed in the following way
 
 ```bash
 cd /path/to/TrackerAutoLogin/
