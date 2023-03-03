@@ -1,5 +1,5 @@
 
-# TrackerLogin
+# TrackerAutoLogin
 
 Github URL: https://github.com/mastiffmushroom/TrackerAutoLogin
 Dockerhub URL: https://hub.docker.com/repository/registry-1.docker.io/mastiffmushroom/trackerautologin/general
@@ -33,9 +33,9 @@ I will be moving this to DockerHub as well as try to get it uploaded on the Unra
 In the meantime, on linux you can run it with the following commands
 
 ```bash
-cd /path/to/TrackerLogin/
-sudo docker build . -t trackerlogin
-sudo docker run -it trackerlogin
+cd /path/to/TrackerAutoLogin/
+sudo docker build . -t trackerautologin
+sudo docker run -it trackerautologin
 ```
 
 To view the log file, you first need to run `docker ps` and get the phrase in the format of `word1_word2` under the `NAME` column. For the example below, replace `WORD1_WORD2` with what you found in the `NAME` column.
