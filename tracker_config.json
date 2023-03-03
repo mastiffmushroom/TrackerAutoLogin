@@ -1,0 +1,30 @@
+{
+ "AlphaRatio":{"url":"https://alpharatio.cc/login.php",
+               "login_url":"https://alpharatio.cc/index.php",
+               "login_box":"username",
+               "login_box_type":"ID",
+               "password_box":"password",
+               "password_box_type":"ID",
+               "submit_box":"//input[@type='submit' and @value='Login']",
+               "submit_box_type":"XPATH"
+              },
+"Aither":{"url":"https://aither.cc/login",
+          "login_url":"https://aither.cc/",
+          "login_box":"username",
+          "login_box_type":"ID",
+          "password_box":"password",
+          "password_box_type":"ID",
+          "submit_box":"//button[@type='submit' and @id='login-button']",
+          "submit_box_type":"XPATH"
+         },
+"TorrentLeech":{"url":"https://www.torrentleech.org/user/account/login/",
+                "login_url":"https://www.torrentleech.org/torrents/top/index/added/-1%20day/orderby/completed/order/desc",
+                "login_box":"username",
+                "login_box_type":"NAME",
+                "password_box":"password",
+                "password_box_type":"NAME",
+                "submit_box":"//button[@type='submit' and @class='btn tl-btn btn-primary action']",
+                "submit_box_type":"XPATH"
+               }
+}
+
