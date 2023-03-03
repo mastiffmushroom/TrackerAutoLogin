@@ -9,8 +9,6 @@ import datetime
 import requests
 import numpy as np
 from custom_logger import logging
-# sudo docker build . -t trackerlogin; sudo docker run -it trackerlogin
-
 
 def set_chrome_options() -> None:
 
@@ -76,6 +74,8 @@ def TrackerLogin(tracker, user_keys, tracker_keys):
         try:
             url = tracker_keys["url"]
             login_url = tracker_keys["login_url"]
+            if url == login_url:
+                login_title = tracker_keys["login_title"].lower()
             user = user_keys["user_login"]
             passwd = user_keys["pass_login"]
             
@@ -105,19 +105,30 @@ def TrackerLogin(tracker, user_keys, tracker_keys):
             pass_b.send_keys(passwd)
             submit_b.click()
             
-            time.sleep(5)
-            
-            fail_url = "LOGIN URL WAS \'" + driver.current_url + "\' instead of \'" + login_url + "'"
-            assert(driver.current_url == login_url),fail_url
+            time.sleep(10)
+
+            if url != login_url:
+                fail_url = "LOGIN URL WAS \'" + driver.current_url + "\' instead of \'" + login_url + "'"
+                assert(driver.current_url == login_url),fail_url
+            else:
+                fail_title = "LOGIN TITLE WAS \'" + driver.title.lower() + "\' instead of \'" + login_title + "'"
+                assert(driver.title.lower() == login_title),fail_title
             
             driver.close()
             return True
+        except TimeoutError:
+            curr_time = str(datetime.datetime.now())
+            failed = curr_time + " : Timeout error when trying to login to " + tracker + " will try again next loop"
+            logging.error(failed)
+            driver.close()
+            return False
         except Exception as e:
             curr_time = str(datetime.datetime.now())
             failed = curr_time + " : Failed to login to " + tracker + " due to Error: " + str(e)
             logging.error(failed)
             driver.close()
-            return False
+            return False            
+
 
 
 
@@ -149,7 +160,7 @@ if __name__ == "__main__":
             logging.debug(curr_time + " : " + "Successful connection to internet via " + connection_url)
             for t in user_config.keys():
                 curr_time = str(datetime.datetime.now())
-                print(curr_time + t)
+                print(curr_time, "Attempting " + t)
                 logging.debug(curr_time + " : Attempting to login to " + t)
                 tracker = tracker_config[t]
                 successful = TrackerLogin(t, user_config[t], tracker)

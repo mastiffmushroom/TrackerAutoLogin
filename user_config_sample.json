@@ -1,14 +1,17 @@
 {
-"LogLevel":"debug",
-"Hours_Rerun":24,
-"CheckConnectionURL":"https://www.google.com/",
-"AlphaRatio":{"user_login":"YourUsername",
-              "pass_login":"YourPassword"
-             },
-"Aither":{"user_login":"YourUsername",
-          "pass_login":"YourPassword"
-         },
-"TorrentLeech":{"user_login":"YourUsername",
-                "pass_login":"YourPassword"
-               }
+    "LogLevel": "debug",
+    "Hours_Rerun": 24,
+    "CheckConnectionURL": "https://www.google.com/",
+    "AlphaRatio": {
+        "user_login": "YourUsername",
+        "pass_login": "YourPassword"
+    },
+    "Aither": {
+        "user_login": "YourUsername",
+        "pass_login": "YourPassword"
+    },
+    "TorrentLeech": {
+        "user_login": "YourUsername",
+        "pass_login": "YourPassword"
+    }
 }

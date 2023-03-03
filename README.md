@@ -14,6 +14,8 @@ This is a docker file to automate the logging in of torrent trackers every few h
 * AlphaRatio
 * Aither
 * ExtremeBits
+* HD-Space [mostly working]
+* PussyTorrents
 * TorrentLeech
 
 ## Configuration
