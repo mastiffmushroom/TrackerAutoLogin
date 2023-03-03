@@ -25,6 +25,15 @@
                 "password_box_type":"NAME",
                 "submit_box":"//button[@type='submit' and @class='btn tl-btn btn-primary action']",
                 "submit_box_type":"XPATH"
-               }
+               },
+"ExtremeBits":{"url":"https://extremebits.net/login.php",
+               "login_url":"https://extremebits.net/index.php",
+               "login_box":"//input[@placeholder='Username' and @type='text']",
+               "login_box_type":"XPATH",
+               "password_box":"//input[@placeholder='Password' and @type='password']",
+               "password_box_type":"XPATH",
+               "submit_box":"//button[@class='animated']",
+               "submit_box_type":"XPATH"
+              }
 }
 

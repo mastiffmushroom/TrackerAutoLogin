@@ -34,7 +34,7 @@ def CheckConnection(url, timeout=10) -> bool:
         _ = requests.head(url, timeout=timeout)
         return True
     except requests.ConnectionError:
-	return False
+        return False
         
 def GetElementWait(driver, box, box_type):
     
@@ -149,6 +149,7 @@ if __name__ == "__main__":
             logging.debug(curr_time + " : " + "Successful connection to internet via " + connection_url)
             for t in user_config.keys():
                 curr_time = str(datetime.datetime.now())
+                print(curr_time + t)
                 logging.debug(curr_time + " : Attempting to login to " + t)
                 tracker = tracker_config[t]
                 successful = TrackerLogin(t, user_config[t], tracker)
