@@ -2,13 +2,13 @@ import os
 import logging
 import json
 
-dir_ = os.path.join(os.getcwd(), "Logfile/")
+dir_ = os.path.join(os.getcwd(), "config/logs/")
 if os.path.isdir(dir_) == False:
     os.makedirs(dir_)
 
-log_filename = os.path.join(dir_, "TrackerLogin.log")
+log_filename = os.path.join(dir_, "trackerautologin.log")
 
-with open("user_config.json", 'r') as f:
+with open(os.path.join(os.getcwd(), "config/user_config.json"), 'r') as f:
     user_config = json.load(f)
     
 assert(user_config["LogLevel"].lower() in ["debug", "error", "warning"]),"LogLevel must be ['debug', 'warning', 'error']"

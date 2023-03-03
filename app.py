@@ -9,6 +9,7 @@ import datetime
 import requests
 import numpy as np
 from custom_logger import logging
+import os
 
 def set_chrome_options() -> None:
 
@@ -134,10 +135,10 @@ def TrackerLogin(tracker, user_keys, tracker_keys):
 
 if __name__ == "__main__":
 
-    with open("tracker_config.json", 'r') as f:
+    with open(os.path.join(os.getcwd(), "config/tracker_config.json"), 'r') as f:
         tracker_config = json.load(f)
 
-    with open("user_config.json", 'r') as f:
+    with open(os.path.join(os.getcwd(), "config/user_config.json"), 'r') as f:
         user_config = json.load(f)
         
     hours_sleep = user_config["Hours_Rerun"]
