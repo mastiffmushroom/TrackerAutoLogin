@@ -12,8 +12,9 @@ This is a docker file to automate the logging in of torrent trackers every few h
 ## Currently supported sites
 
 * AlphaRatio
-* TorrentLeech
 * Aither
+* ExtremeBits
+* TorrentLeech
 
 ## Configuration
 
