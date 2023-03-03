@@ -35,8 +35,8 @@ In the meantime, on linux you can run it with the following commands
 
 ```bash
 cd /path/to/TrackerAutoLogin/
-sudo docker build . -t trackerautologin
-sudo docker run -it trackerautologin
+docker build . -t trackerautologin
+docker run -it trackerautologin
 ```
 
 To view the log file, you first need to run `docker ps` and get the phrase in the format of `word1_word2` under the `NAME` column. For the example below, replace `WORD1_WORD2` with what you found in the `NAME` column.
