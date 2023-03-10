@@ -11,13 +11,15 @@ This is a docker file to automate the logging in of torrent trackers every few h
 
 ## Currently supported sites
 
-* AlphaRatio
-* Aither
-* ExtremeBits
-* HD-Space [mostly working]
-* MyAnonmouse
-* PussyTorrents
-* TorrentLeech
+* Aither (Aither.cc)
+* AlphaRatio (AlphaRatio.cc)
+* ExtremeBits (Extremebits.net)
+* Gay-Torrents (Gay-Torrents.org)
+* HappyFappy (HappyFappy.org)
+* HD-Space [mostly working] (HD-Space.org)
+* MyAnonmouse (MyAnonamouse.net)
+* PussyTorrents (PussyTorrents.org)
+* TorrentLeech (TorrentLeech.org)
 
 ## Configuration
 
