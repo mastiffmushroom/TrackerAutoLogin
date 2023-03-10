@@ -29,6 +29,27 @@
         "submit_box": "//button[@class='animated']",
         "submit_box_type": "XPATH"
     },
+    "Gay-Torrents": {
+	"url":"https://gay-torrents.org/",
+	"login_url":"https://gay-torrents.org/index.php",
+	"login_box":"uid",
+	"login_box_type":"NAME",
+	"password_box":"pwd",
+	"password_box_type":"NAME",
+	"submit_box":"//input[@type='submit' and @value='Login']",
+	"submit_box_type":"XPATH"
+    },
+    "HappyFappy": {
+	"url":"https://www.happyfappy.org/login",
+	"login_url":"https://www.happyfappy.org/login",
+	"login_title":"News :: HappyFappy",
+	"login_box":"username",
+	"login_box_type":"NAME",
+	"password_box":"password",
+	"password_box_type":"NAME",
+	"submit_box":"//input[@id='login_button' and @type='submit']",
+	"submit_box_type":"XPATH"
+    },
     "HD-Space": {
         "url": "https://hd-space.org/",
         "login_url": "https://hd-space.org/",
