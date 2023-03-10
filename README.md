@@ -3,7 +3,7 @@
 
 Github URL: https://github.com/mastiffmushroom/TrackerAutoLogin
 
-Dockerhub URL: https://hub.docker.com/repository/docker/mastiffmushroom/trackerautologin/general
+Dockerhub URL: https://hub.docker.com/r/mastiffmushroom/trackerautologin
 
 This is a docker file to automate the logging in of torrent trackers every few hours so your account can stay active and you can still have access to downloading your Linux install files.
 
