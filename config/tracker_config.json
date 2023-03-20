@@ -92,5 +92,16 @@
         "password_box_type": "NAME",
         "submit_box": "//button[@type='submit' and @class='btn tl-btn btn-primary action']",
         "submit_box_type": "XPATH"
+    },
+    "TV-Vault": {
+        "url": "https://tv-vault.me/login.php",
+        "login_url": "https://tv-vault.me/index.php",
+        "login_title": "News :: TV Vault",
+        "login_box": "username",
+        "login_box_type": "ID",
+        "password_box": "password",
+        "password_box_type": "ID",
+        "submit_box": "//input[@type='submit']",
+        "submit_box_type": "XPATH"
     }
 }
