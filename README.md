@@ -18,6 +18,7 @@ This is a docker file to automate the logging in of torrent trackers every few h
 * HappyFappy (HappyFappy.org)
 * HD-Space [mostly working] (HD-Space.org)
 * MyAnonmouse (MyAnonamouse.net)
+* Pornbay (Pornbay.org)
 * PussyTorrents (PussyTorrents.org)
 * TorrentLeech (TorrentLeech.org)
 * TV Vault (TV-Vault.me)

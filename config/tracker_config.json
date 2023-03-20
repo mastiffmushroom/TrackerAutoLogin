@@ -72,6 +72,17 @@
         "submit_box": "//input[@type='submit' and @value='Log in!']",
         "submit_box_type": "XPATH"
     },
+    "Pornbay": {
+        "url": "https://pornbay.org/login.php",
+        "login_url": "https://pornbay.org/index.php",
+        "login_title": "News :: Pornbay.org",
+        "login_box": "username",
+        "login_box_type": "ID",
+        "password_box": "password",
+        "password_box_type": "ID",
+        "submit_box": "//input[@type='submit']",
+        "submit_box_type": "XPATH"
+    },
     "PussyTorrents": {
         "url": "http://pussytorrents.org/",
         "login_url": "http://pussytorrents.org/",
