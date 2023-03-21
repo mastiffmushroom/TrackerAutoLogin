@@ -5,6 +5,8 @@ Github URL: https://github.com/mastiffmushroom/TrackerAutoLogin
 
 Dockerhub URL: https://hub.docker.com/r/mastiffmushroom/trackerautologin
 
+Unraid CA Forum URL: https://forums.unraid.net/topic/135837-support-mastiffmushroom-trackerautologin/
+
 This is a docker file to automate the logging in of torrent trackers every few hours so your account can stay active and you can still have access to downloading your Linux install files.
 
 **DISCLAIMER**: This software doesn't download any illegal files, it simply logs in with pre-given credentials. I do not condone using this software to illegally obtain items.
@@ -32,7 +34,9 @@ The configuration files are loaded under `config/`. On the github page, it has a
 
 The code lookds for `user_config.json` while `config/` only has `user_config_sample.json` to give you an idea on how to fill it out. You only need to put in information for websites that you have login details for -- otherwise the login will fail.
 
-`LogLevel` is the level you want to write logs to. All logs are written inside the docker container to `/app/Logfile/TrackerLogin.log`. `LogLevel` takes 3 values [`debug`, `warning`, `error`].
+`LogLevel` is the level you want to write logs to. All logs are written inside the docker container to `/app/config/logs/trackerautologin.log`. `LogLevel` takes 3 values [`debug`, `warning`, `error`].
+
+`LogType` takes two different parameters, `file` or `stderr`. If `file`, it will output to `trackeruatologin.log` but if `stderr` is configured, then it will output to standard error (docker log file in Unraid).
 
 `Hours_Rerun` in the config file is the maximum number of hours to to wait before each run. What this software does, is it chooses a random range between `Hours_Rerun/2` and `Hours_Rerun` before attempting the next rerun. The reason for this is if some sites have bot login detection, it will be much harder to detect if you're not logging in the same time every day.
 
