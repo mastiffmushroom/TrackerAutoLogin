@@ -151,6 +151,7 @@ if __name__ == "__main__":
     del user_config["Hours_Rerun"]
     del user_config["CheckConnectionURL"]
     del user_config["LogLevel"]
+    del user_config["LogType"]
     
     while True:
         
