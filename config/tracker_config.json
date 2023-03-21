@@ -61,6 +61,17 @@
         "submit_box": "//input[@type='submit' and @value='Login']",
         "submit_box_type": "XPATH"
     },
+    "IPTorrents": {
+        "url": "https://iptorrents.com/login.php",
+        "login_url": "https://iptorrents.com/t",
+        "login_title": "Torrents - IPTorrents - #1 Private Tracker",
+        "login_box": "username",
+        "login_box_type": "NAME",
+        "password_box": "password",
+        "password_box_type": "NAME",
+        "submit_box": "//input[@type='submit']",
+        "submit_box_type": "XPATH"
+    }
     "MyAnonamouse": {
         "url": "https://www.myanonamouse.net/login.php",
         "login_url": "https://www.myanonamouse.net/u/",
