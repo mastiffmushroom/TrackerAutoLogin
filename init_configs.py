@@ -50,7 +50,6 @@ else:
     ut_dict = {}    
             
     for key in t_dict.keys():
-        print(key)
         if key not in trackers:
             if key in u_dict.keys():
                 ut_dict[key] = u_dict[key]
