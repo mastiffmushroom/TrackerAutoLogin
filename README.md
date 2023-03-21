@@ -17,6 +17,7 @@ This is a docker file to automate the logging in of torrent trackers every few h
 * Gay-Torrents (Gay-Torrents.org)
 * HappyFappy (HappyFappy.org)
 * HD-Space [mostly working] (HD-Space.org)
+* IPTorrents (IPTorrents.com) [CURRENTLY NOT WORKING DUE TO CLOUDFLARE]
 * MyAnonmouse (MyAnonamouse.net)
 * Pornbay (Pornbay.org)
 * PussyTorrents (PussyTorrents.org)
