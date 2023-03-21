@@ -44,5 +44,22 @@ else:
         if key not in u_dict.keys():
             u_dict[key] = t_dict[key]
             
+    with open(tracker_file, 'r') as f:
+        trackers = list(json.load(f).keys())
+        
+    ut_dict = {}    
+            
+    for key in t_dict.keys():
+        print(key)
+        if key not in trackers:
+            if key in u_dict.keys():
+                ut_dict[key] = u_dict[key]
+            else:
+                ut_dict[key] = t_dict[key]
+            
+    for track in trackers:
+        if track in u_dict.keys():
+            ut_dict[track] = u_dict[track]
+            
     with open(user_file, 'w') as f:
-        json.dump(u_dict, f, indent=4, sort_keys=True)
+        json.dump(ut_dict, f, indent=4)
