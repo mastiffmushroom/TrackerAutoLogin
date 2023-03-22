@@ -71,7 +71,7 @@
         "password_box_type": "NAME",
         "submit_box": "//input[@type='submit']",
         "submit_box_type": "XPATH"
-    }
+    },
     "MyAnonamouse": {
         "url": "https://www.myanonamouse.net/login.php",
         "login_url": "https://www.myanonamouse.net/u/",
