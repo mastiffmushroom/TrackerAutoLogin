@@ -24,6 +24,7 @@ This is a docker file to automate the logging in of torrent trackers every few h
 * Pornbay (Pornbay.org)
 * PussyTorrents (PussyTorrents.org)
 * TorrentLeech (TorrentLeech.org)
+* TorrentSeeds (TorrentSeeds.org)
 * TV Vault (TV-Vault.me)
 
 ## Configuration
