@@ -27,6 +27,16 @@ This is a docker file to automate the logging in of torrent trackers every few h
 * TorrentSeeds (TorrentSeeds.org)
 * TV Vault (TV-Vault.me)
 
+## Requesting more sites:
+
+To request more sites, please open an issue on github in the following format
+
+* Post the login url (prior to logging in)
+* Post the post login url (after logging in), if there's a username in the url, please replace it with `[REDACTED]`
+* Post the title of the page of the website after logging in
+
+After updating `tracker_config.json` I will notify you and ask you to please try running TAL again to see if you get a successful login.
+
 ## Configuration
 
 This software uses Docker, so please look into how to install it on Docker. As I run linux, I will only be able to tell you how to run it on linux.
