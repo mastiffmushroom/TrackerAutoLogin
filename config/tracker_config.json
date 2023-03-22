@@ -115,6 +115,17 @@
         "submit_box": "//button[@type='submit' and @class='btn tl-btn btn-primary action']",
         "submit_box_type": "XPATH"
     },
+    "TorrentSeeds": {
+        "url": "https://www.torrentseeds.org/login",
+        "login_url": "https://www.torrentseeds.org/pages/1",
+        "login_title": "TorrentSeeds - Torrents needing seeds",
+        "login_box": "//input[@id='username' and @name='username']",
+        "login_box_type": "XPATH",
+        "password_box": "//input[@id='password' and @name='password']",
+        "password_box_type": "XPATH",
+        "submit_box": "//button[@type='submit' and @id='login-button']",
+        "submit_box_type": "XPATH"
+    },
     "TV-Vault": {
         "url": "https://tv-vault.me/login.php",
         "login_url": "https://tv-vault.me/index.php",
