@@ -15,12 +15,17 @@ This is a docker file to automate the logging in of torrent trackers every few h
 
 * Aither (Aither.cc)
 * AlphaRatio (AlphaRatio.cc)
+* Blutopia (Blutopia.xyz)
+* CathodeRayTube (www.cathode-ray.tube)
 * ExtremeBits (Extremebits.net)
 * Gay-Torrents (Gay-Torrents.org)
 * HappyFappy (HappyFappy.org)
 * HD-Space [mostly working] (HD-Space.org)
 * IPTorrents (IPTorrents.com) [CURRENTLY NOT WORKING DUE TO CLOUDFLARE]
+* Immortal Seed (immortalseed.me)
+* LST (lst.gg)
 * MyAnonmouse (MyAnonamouse.net)
+* MoreThanTV (morethantv.me)
 * Pornbay (Pornbay.org)
 * PussyTorrents (PussyTorrents.org)
 * TorrentLeech (TorrentLeech.org)
