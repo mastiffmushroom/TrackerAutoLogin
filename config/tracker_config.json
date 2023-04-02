@@ -30,7 +30,7 @@
 		"submit_box_type": "XPATH"
 	},
 	"CathodeRayTube": {
-		"url": "https://www.cathode-ray.tube/lobin",
+		"url": "https://www.cathode-ray.tube/login",
 		"login_url": "https://www.cathode-ray.tube/",
 		"login_title": "News :: Cathode-Ray.Tube",
 		"login_box": "//input[@class='text-input' and @name='username']",
