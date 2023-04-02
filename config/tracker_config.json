@@ -1,140 +1,194 @@
 {
-    "Aither": {
-        "url": "https://aither.cc/login",
-        "login_url": "https://aither.cc/",
-        "login_box": "username",
-        "login_box_type": "ID",
-        "password_box": "password",
-        "password_box_type": "ID",
-        "submit_box": "//button[@type='submit' and @id='login-button']",
-        "submit_box_type": "XPATH"
-    },
-    "AlphaRatio": {
-        "url": "https://alpharatio.cc/login.php",
-        "login_url": "https://alpharatio.cc/index.php",
-        "login_box": "username",
-        "login_box_type": "ID",
-        "password_box": "password",
-        "password_box_type": "ID",
-        "submit_box": "//input[@type='submit' and @value='Login']",
-        "submit_box_type": "XPATH"
-    },
-    "ExtremeBits": {
-        "url": "https://extremebits.net/login.php",
-        "login_url": "https://extremebits.net/index.php",
-        "login_box": "//input[@placeholder='Username' and @type='text']",
-        "login_box_type": "XPATH",
-        "password_box": "//input[@placeholder='Password' and @type='password']",
-        "password_box_type": "XPATH",
-        "submit_box": "//button[@class='animated']",
-        "submit_box_type": "XPATH"
-    },
-    "Gay-Torrents": {
-        "url":"https://gay-torrents.org/",
-        "login_url":"https://gay-torrents.org/index.php",
-        "login_box":"uid",
-        "login_box_type":"NAME",
-        "password_box":"pwd",
-        "password_box_type":"NAME",
-        "submit_box":"//input[@type='submit' and @value='Login']",
-        "submit_box_type":"XPATH"
-    },
-    "HappyFappy": {
-        "url":"https://www.happyfappy.org/login",
-        "login_url":"https://www.happyfappy.org/login",
-        "login_title":"News :: HappyFappy",
-        "login_box":"username",
-        "login_box_type":"NAME",
-        "password_box":"password",
-        "password_box_type":"NAME",
-        "submit_box":"//input[@id='login_button' and @type='submit']",
-        "submit_box_type":"XPATH"
-    },
-    "HD-Space": {
-        "url": "https://hd-space.org/",
-        "login_url": "https://hd-space.org/",
-        "login_title": "hd-space - sharing the universe .::. index",
-        "login_box": "//input[@type='text' and @id='want_username1']",
-        "login_box_type": "XPATH",
-        "password_box": "//input[@type='password' and @id='want_password1']",
-        "password_box_type": "XPATH",
-        "submit_box": "//input[@type='submit' and @value='Login']",
-        "submit_box_type": "XPATH"
-    },
-    "IPTorrents": {
-        "url": "https://iptorrents.com/login.php",
-        "login_url": "https://iptorrents.com/t",
-        "login_title": "Torrents - IPTorrents - #1 Private Tracker",
-        "login_box": "username",
-        "login_box_type": "NAME",
-        "password_box": "password",
-        "password_box_type": "NAME",
-        "submit_box": "//input[@type='submit']",
-        "submit_box_type": "XPATH"
-    },
-    "MyAnonamouse": {
-        "url": "https://www.myanonamouse.net/login.php",
-        "login_url": "https://www.myanonamouse.net/u/",
-        "login_title": "My Anonamouse",
-        "login_box": "//input[@type='email']",
-        "login_box_type": "XPATH",
-        "password_box": "//input[@type='password']",
-        "password_box_type": "XPATH",
-        "submit_box": "//input[@type='submit' and @value='Log in!']",
-        "submit_box_type": "XPATH"
-    },
-    "Pornbay": {
-        "url": "https://pornbay.org/login.php",
-        "login_url": "https://pornbay.org/index.php",
-        "login_title": "News :: Pornbay.org",
-        "login_box": "username",
-        "login_box_type": "ID",
-        "password_box": "password",
-        "password_box_type": "ID",
-        "submit_box": "//input[@type='submit']",
-        "submit_box_type": "XPATH"
-    },
-    "PussyTorrents": {
-        "url": "http://pussytorrents.org/",
-        "login_url": "http://pussytorrents.org/",
-        "login_title": "latest news :: pussytorrents.org",
-        "login_box": "username",
-        "login_box_type": "NAME",
-        "password_box": "password",
-        "password_box_type": "NAME",
-        "submit_box": "//button[@type='submit' and @class='btn']",
-        "submit_box_type": "XPATH"
-    },
-    "TorrentLeech": {
-        "url": "https://www.torrentleech.org/user/account/login/",
-        "login_url": "https://www.torrentleech.org/torrents/top/index/added/-1%20day/orderby/completed/order/desc",
-        "login_box": "username",
-        "login_box_type": "NAME",
-        "password_box": "password",
-        "password_box_type": "NAME",
-        "submit_box": "//button[@type='submit' and @class='btn tl-btn btn-primary action']",
-        "submit_box_type": "XPATH"
-    },
-    "TorrentSeeds": {
-        "url": "https://www.torrentseeds.org/login",
-        "login_url": "https://www.torrentseeds.org/pages/1",
-        "login_title": "TorrentSeeds - Torrents needing seeds",
-        "login_box": "//input[@id='username' and @name='username']",
-        "login_box_type": "XPATH",
-        "password_box": "//input[@id='password' and @name='password']",
-        "password_box_type": "XPATH",
-        "submit_box": "//button[@type='submit' and @id='login-button']",
-        "submit_box_type": "XPATH"
-    },
-    "TV-Vault": {
-        "url": "https://tv-vault.me/login.php",
-        "login_url": "https://tv-vault.me/index.php",
-        "login_title": "News :: TV Vault",
-        "login_box": "username",
-        "login_box_type": "ID",
-        "password_box": "password",
-        "password_box_type": "ID",
-        "submit_box": "//input[@type='submit']",
-        "submit_box_type": "XPATH"
-    }
+	"Aither": {
+		"url": "https://aither.cc/login",
+		"login_url": "https://aither.cc/",
+		"login_box": "username",
+		"login_box_type": "ID",
+		"password_box": "password",
+		"password_box_type": "ID",
+		"submit_box": "//button[@type='submit' and @id='login-button']",
+		"submit_box_type": "XPATH"
+	},
+	"AlphaRatio": {
+		"url": "https://alpharatio.cc/login.php",
+		"login_url": "https://alpharatio.cc/index.php",
+		"login_box": "username",
+		"login_box_type": "ID",
+		"password_box": "password",
+		"password_box_type": "ID",
+		"submit_box": "//input[@type='submit' and @value='Login']",
+		"submit_box_type": "XPATH"
+	},
+	"Blutopia": {
+		"url": "https://blutopia.xyz/login",
+		"login_url": "https://blutopia.xyz",
+		"login_box": "//input[@id='username' and @name='username']",
+		"login_box_type": "XPATH",
+		"password_box": "//input[@id='password' and @name='password']",
+		"passowrd_box_type": "XPATH",
+		"submit_box": "//button[@type='submit' and @id='login-button']",
+		"submit_box_type": "XPATH"
+	},
+	"CathodeRayTube": {
+		"url": "https://www.cathode-ray.tube/lobin",
+		"login_url": "https://www.cathode-ray.tube/",
+		"login_title": "News :: Cathode-Ray.Tube",
+		"login_box": "//input[@class='text-input' and @name='username']",
+		"login_box_type": "XPATH",
+		"password_box": "//input[@class='text-input' and @name='password']",
+		"password_box_type": "XPATH",
+		"submit_box": "//input[@id='login_button' and @name='submit']",
+		"submit_box_type": "XPATH"
+	},
+	"ExtremeBits": {
+		"url": "https://extremebits.net/login.php",
+		"login_url": "https://extremebits.net/index.php",
+		"login_box": "//input[@placeholder='Username' and @type='text']",
+		"login_box_type": "XPATH",
+		"password_box": "//input[@placeholder='Password' and @type='password']",
+		"password_box_type": "XPATH",
+		"submit_box": "//button[@class='animated']",
+		"submit_box_type": "XPATH"
+	},
+	"Gay-Torrents": {
+		"url": "https://gay-torrents.org/",
+		"login_url": "https://gay-torrents.org/index.php",
+		"login_box": "uid",
+		"login_box_type": "NAME",
+		"password_box": "pwd",
+		"password_box_type": "NAME",
+		"submit_box": "//input[@type='submit' and @value='Login']",
+		"submit_box_type": "XPATH"
+	},
+	"HappyFappy": {
+		"url": "https://www.happyfappy.org/login",
+		"login_url": "https://www.happyfappy.org/login",
+		"login_title": "News :: HappyFappy",
+		"login_box": "username",
+		"login_box_type": "NAME",
+		"password_box": "password",
+		"password_box_type": "NAME",
+		"submit_box": "//input[@id='login_button' and @type='submit']",
+		"submit_box_type": "XPATH"
+	},
+	"HD-Space": {
+		"url": "https://hd-space.org/",
+		"login_url": "https://hd-space.org/",
+		"login_title": "hd-space - sharing the universe .::. index",
+		"login_box": "//input[@type='text' and @id='want_username1']",
+		"login_box_type": "XPATH",
+		"password_box": "//input[@type='password' and @id='want_password1']",
+		"password_box_type": "XPATH",
+		"submit_box": "//input[@type='submit' and @value='Login']",
+		"submit_box_type": "XPATH"
+	},
+	"ImmortalSeed": {
+		"url": "https://immortalseed.me/",
+		"login_url": "https://immortalseed.me/index.php?logged=true",
+		"login_title": "immortalseed.me :: Welcome to immortalseed.me",
+		"login_box": "//input[@type='text' and @name='username']",
+		"login_box_type": "XPATH",
+		"password_box": "//input[@type='password' and @name='password']",
+		"password_box_type": "XPATH",
+		"submit_box": "//input[@type='submit' and @value='LOGIN']",
+		"submit_box_type": "XPATH"
+	},
+	"IPTorrents": {
+		"url": "https://iptorrents.com/login.php",
+		"login_url": "https://iptorrents.com/t",
+		"login_title": "Torrents - IPTorrents - #1 Private Tracker",
+		"login_box": "username",
+		"login_box_type": "NAME",
+		"password_box": "password",
+		"password_box_type": "NAME",
+		"submit_box": "//input[@type='submit']",
+		"submit_box_type": "XPATH"
+	},
+	"LST": {
+		"url": "https://lst.gg/login",
+		"login_url": "https://lst.gg/",
+		"login_title": "LST - Something cool",
+		"login_box": "//input[@id='username' and @name='username']",
+		"login_box_type": "XPATH",
+		"password_box": "//input[@id='password' and @name='password']",
+		"password_box_type": "XPATH",
+		"submit_box": "//button[@type='submit' and @id='login-button']",
+		"submit_box_type": "XPATH"
+	},
+	"MyAnonamouse": {
+		"url": "https://www.myanonamouse.net/login.php",
+		"login_url": "https://www.myanonamouse.net/u/",
+		"login_title": "My Anonamouse",
+		"login_box": "//input[@type='email']",
+		"login_box_type": "XPATH",
+		"password_box": "//input[@type='password']",
+		"password_box_type": "XPATH",
+		"submit_box": "//input[@type='submit' and @value='Log in!']",
+		"submit_box_type": "XPATH"
+	},
+	"MoreThanTV": {
+		"url": "https://www.morethantv.me/login",
+		"login_url": "https://www.morethantv.me/",
+		"login_title": "News :: MoreThanTV",
+		"login_box": "//input[@class='text-input' and @name='username']",
+		"login_box_type": "XPATH",
+		"password_box": "//input[@class='text-input' and @name='password']",
+		"password_box_type": "XPATH",
+		"submit_box": "//input[@id='login-button' and @name='submit']",
+		"submit_box_type": "XPATH"
+	},
+	"Pornbay": {
+		"url": "https://pornbay.org/login.php",
+		"login_url": "https://pornbay.org/index.php",
+		"login_title": "News :: Pornbay.org",
+		"login_box": "username",
+		"login_box_type": "ID",
+		"password_box": "password",
+		"password_box_type": "ID",
+		"submit_box": "//input[@type='submit']",
+		"submit_box_type": "XPATH"
+	},
+	"PussyTorrents": {
+		"url": "http://pussytorrents.org/",
+		"login_url": "http://pussytorrents.org/",
+		"login_title": "latest news :: pussytorrents.org",
+		"login_box": "username",
+		"login_box_type": "NAME",
+		"password_box": "password",
+		"password_box_type": "NAME",
+		"submit_box": "//button[@type='submit' and @class='btn']",
+		"submit_box_type": "XPATH"
+	},
+	"TorrentLeech": {
+		"url": "https://www.torrentleech.org/user/account/login/",
+		"login_url": "https://www.torrentleech.org/torrents/top/index/added/-1%20day/orderby/completed/order/desc",
+		"login_box": "username",
+		"login_box_type": "NAME",
+		"password_box": "password",
+		"password_box_type": "NAME",
+		"submit_box": "//button[@type='submit' and @class='btn tl-btn btn-primary action']",
+		"submit_box_type": "XPATH"
+	},
+	"TorrentSeeds": {
+		"url": "https://www.torrentseeds.org/login",
+		"login_url": "https://www.torrentseeds.org/pages/1",
+		"login_title": "TorrentSeeds - Torrents needing seeds",
+		"login_box": "//input[@id='username' and @name='username']",
+		"login_box_type": "XPATH",
+		"password_box": "//input[@id='password' and @name='password']",
+		"password_box_type": "XPATH",
+		"submit_box": "//button[@type='submit' and @id='login-button']",
+		"submit_box_type": "XPATH"
+	},
+	"TV-Vault": {
+		"url": "https://tv-vault.me/login.php",
+		"login_url": "https://tv-vault.me/index.php",
+		"login_title": "News :: TV Vault",
+		"login_box": "username",
+		"login_box_type": "ID",
+		"password_box": "password",
+		"password_box_type": "ID",
+		"submit_box": "//input[@type='submit']",
+		"submit_box_type": "XPATH"
+	}
 }
