@@ -16,7 +16,7 @@ This is a docker file to automate the logging in of torrent trackers every few h
 * Aither (Aither.cc)
 * AlphaRatio (AlphaRatio.cc)
 * Blutopia (Blutopia.xyz)
-* CathodeRayTube (www.cathode-ray.tube)
+* CathodeRayTube (cathode-ray.tube)
 * ExtremeBits (Extremebits.net)
 * Gay-Torrents (Gay-Torrents.org)
 * HappyFappy (HappyFappy.org)
