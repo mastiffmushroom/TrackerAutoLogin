@@ -60,7 +60,29 @@ The code lookds for `user_config.json` while `config/` only has `user_config_sam
 
 ## How to Run
 
-You can run this 3 different ways
+You can run this 4 different ways
+
+### Docker compose
+
+```yaml
+version: '3.3'
+services:
+    trackerautologin:
+        container_name: trackerautologin
+        image: mastiffmushroom/trackerautologin
+        environment:
+          - PUID=1000
+          - PGID=1000  
+          - UMASK=000 #PGID PUID UMASK should be updated to match your env
+          - TZ=America/Toronto #update to your timezone
+        volumes:
+            - /path/on/your/system/:/app/config/ #specify your config file location
+        restart: unless-stopped
+```
+
+Create a compose.yaml file at `/path/to/TrackerAutoLogin/` and a config folder at `/path/to/TrackerAutoLogin/config/`. Run it using `docker compose up -d`. 
+
+Navigate to  `/path/to/TrackerAutoLogin/config/` and enter your login details into `user_config.json`. Save the file, then re-run `docker compose up -d` 
 
 ### Directly on your machine
 
