@@ -1,4 +1,5 @@
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -81,7 +82,10 @@ def TrackerLogin(tracker, user_keys, tracker_keys):
             user = user_keys["user_login"]
             passwd = user_keys["pass_login"]
             
-            driver = webdriver.Chrome(options=set_chrome_options())
+            # Use the new Selenium Manager to auto download ChromeDriver if it's missing
+            service = Service()
+
+            driver = webdriver.Chrome(service=service, options=set_chrome_options())
             driver.get(url)
             
             wait = WebDriverWait(driver, 10)
