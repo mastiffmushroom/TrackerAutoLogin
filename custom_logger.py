@@ -2,6 +2,7 @@ import os
 import logging
 import json
 import sys
+from init_configs import read_valid_json_file
 
 dir_ = os.path.join(os.getcwd(), "config/logs/")
 if os.path.isdir(dir_) == False:
@@ -9,9 +10,8 @@ if os.path.isdir(dir_) == False:
 
 log_filename = os.path.join(dir_, "trackerautologin.log")
 
-with open(os.path.join(os.getcwd(), "config/user_config.json"), 'r') as f:
-    user_config = json.load(f)
-    
+user_config = read_valid_json_file(os.path.join(os.getcwd(), "config/user_config.json"), 'r')
+
 assert(user_config["LogLevel"].lower() in ["debug", "error", "warning"]),"LogLevel must be ['debug', 'warning', 'error']"
 
 assert(user_config["LogType"].lower() in ["file", "stderr"]),"'LogType' must be ['file', 'stderr']"

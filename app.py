@@ -12,6 +12,7 @@ import numpy as np
 import init_configs
 from custom_logger import logging
 import os
+from init_configs import read_valid_json_file
 
 def set_chrome_options() -> None:
 
@@ -136,16 +137,15 @@ def TrackerLogin(tracker, user_keys, tracker_keys):
             return False            
 
 
-
-
 if __name__ == "__main__":
 
-    with open(os.path.join(os.getcwd(), "config/tracker_config.json"), 'r') as f:
-        tracker_config = json.load(f)
+    tracker_config = read_valid_json_file(os.path.join(os.getcwd(), "config/tracker_config.json"), 'r')
+    user_config = read_valid_json_file(os.path.join(os.getcwd(), "config/user_config.json"), 'r')
 
-    with open(os.path.join(os.getcwd(), "config/user_config.json"), 'r') as f:
-        user_config = json.load(f)
-        
+    # Check if there's tracker accounts in the JSON. If not it's still the default file.
+    if len(user_config.keys()) <= 4:
+        logging.error("You don't have any trackers in the 'user_config.json' file. Please look at 'user_config_sample.json' for examples")
+       
     hours_sleep = user_config["Hours_Rerun"]
     connection_url = user_config["CheckConnectionURL"]
     fail_connection = 0
@@ -162,7 +162,7 @@ if __name__ == "__main__":
         is_connected = CheckConnection(connection_url)
         loop_sleep = np.round(np.random.uniform(0.5, 1.0) * hours_sleep)
         curr_time = str(datetime.datetime.now())
-        
+
         if is_connected == True:
             logging.debug(curr_time + " : " + "Successful connection to internet via " + connection_url)
             for t in user_config.keys():
