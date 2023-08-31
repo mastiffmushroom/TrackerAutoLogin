@@ -1,6 +1,0 @@
-{
-    "LogType": "stderr",
-    "LogLevel": "debug",
-    "Hours_Rerun": 24,
-    "CheckConnectionURL": "https://www.google.com/"
-}
